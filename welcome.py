@@ -120,3 +120,11 @@
 # with open('write.txt','w') as f:
 #    print(f.writelines("THis is the write folder "))
 
+# docstring
+def getSquare(n):
+    '''This is docstring'''
+    print(n**2)
+    raise ValueError("custom error in get square")
+
+getSquare(2)
+print(getSquare.__doc__) # you can see the docstring if you say functionName.__doc__
